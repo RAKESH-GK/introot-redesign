@@ -6,7 +6,7 @@ import VisionMission from './VisionMission';
 import SuperPowers from './SuperPowers';
 import IndustriesMarquee from './IndustriesMarquee';
 import ProcessSteps from './ProcessSteps';
-import BookCall from './BookCall';                                                            
+// import BookCall from './BookCall';                                                            
 import Footer from './Footer';
 import OurWorks from './OurWorks';
 import VocalForLocalSection from './VocalForLocalSection';
@@ -23,7 +23,6 @@ const App = () => {
       <SuperPowers/>
       <IndustriesMarquee/>
       <ProcessSteps/>
-      <BookCall/>
       <Footer/>
     </div>
   );
