@@ -60,7 +60,7 @@ const Home = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
             >
-              (about my business)
+              (about your business)
             </motion.h2>
 
             <motion.p
