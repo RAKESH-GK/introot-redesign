@@ -64,7 +64,7 @@ const services = [
 
 const Superpowers = () => {
   return (
-    <section className="bg-white dark:bg-gray-900 py-20 px-6 md:px-16">
+    <section id ="Services" className="bg-white dark:bg-gray-900 py-20 px-6 md:px-16">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
           Our Superpowers.

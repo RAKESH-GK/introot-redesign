@@ -73,7 +73,7 @@ const Home = () => {
             </motion.p>
 
             <motion.a
-              href="#schedule"
+              href="#Footer"
               className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full text-sm sm:text-base font-medium shadow-md transition"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}

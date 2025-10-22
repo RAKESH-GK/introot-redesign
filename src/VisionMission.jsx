@@ -37,7 +37,7 @@ const VisionMission = () => {
   const current = contents[index];
 
   return (
-    <section className="relative py-20 px-4 md:px-20 bg-white dark:bg-gray-900 transition-colors duration-300">
+    <section  id = "VisionMission" className="relative py-20 px-4 md:px-20 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
         {/* Image Section */}
         <div className="rounded-2xl overflow-hidden shadow-xl">

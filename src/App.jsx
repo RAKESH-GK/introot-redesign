@@ -6,24 +6,28 @@ import VisionMission from './VisionMission';
 import SuperPowers from './SuperPowers';
 import IndustriesMarquee from './IndustriesMarquee';
 import ProcessSteps from './ProcessSteps';
-// import BookCall from './BookCall';                                                            
+// import BookCall from './BookCall';
 import Footer from './Footer';
 import OurWorks from './OurWorks';
 import VocalForLocalSection from './VocalForLocalSection';
+import StickyWhatsApp from './StickyWhatsApp'; // ✅ add this
 
 const App = () => {
   return (
     <div>
       <Header />
       <Home />
-      <TrustedBy/>
-      <OurWorks/>
-      <VisionMission/>
-      <VocalForLocalSection/>
-      <SuperPowers/>
-      <IndustriesMarquee/>
-      <ProcessSteps/>
-      <Footer/>
+      <TrustedBy />
+      <OurWorks />
+      <VisionMission />
+      <VocalForLocalSection />
+      <SuperPowers />
+      <IndustriesMarquee />
+      <ProcessSteps />
+      <Footer />
+
+      {/* ✅ Sticky WhatsApp icon */}
+      <StickyWhatsApp />
     </div>
   );
 };

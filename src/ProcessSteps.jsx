@@ -68,7 +68,7 @@ const ProcessSection = () => {
         {/* CTA Button */}
         <div className="mt-12">
           <a
-            href="#contact"
+            href="tel:+91 8861092749"
             className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition"
           >
             Let’s Talk

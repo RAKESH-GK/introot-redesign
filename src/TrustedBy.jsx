@@ -1,20 +1,24 @@
 import React from "react";
 
 const brands = [
-  { name: "ifixit", logo: "/asset/ifixit.png" },
-  { name: "buz", logo: "/asset/buz.png" },
-  { name: "ourearth", logo: "/asset/ourearth.png" },
-  { name: "Brand Four", logo: "/asset/magicdoc.png" },
-  { name: "Brand Five", logo: "/asset/bolter.png" },
-  { name: "Brand Six", logo: "/asset/kit-kitchen.png" },
+  { name: "Aadarsh", logo: "/asset/partners/aadarsh.png" },
+  { name: "Bhagath Sing", logo: "/asset/partners/bhagath-sing.png" },
+  { name: "CALD", logo: "/asset/partners/cald.png" },
+  { name: "DJ Jagath", logo: "/asset/partners/dj-jagath.png" },
+  { name: "Indus", logo: "/asset/partners/indus.png" },
+  { name: "Jai Sri Ram", logo: "/asset/partners/jai-sri-ram.png" },
+  { name: "Medha", logo: "/asset/partners/medha.png" },
+  { name: "Shree Dental", logo: "/asset/partners/shree-dental-logo-01.png" },
+  { name: "Story By Click", logo: "/asset/partners/story-by-click.png" },
+  { name: "Swaag Ice Creams", logo: "/asset/partners/swaad-ice-creams.png" },
+  { name: "Trading Kannada", logo: "/asset/partners/trading-kannada-logo.png" },
 ];
 
 const TrustedBy = () => {
-  const fullBrandList = [...brands, ...brands]; // For infinite loop
-
   return (
-    <section className="bg-white dark:bg-gray-900 py-12 px-4 sm:px-8 lg:px-16 overflow-hidden">
-      <div className="max-w-4xl mx-auto text-center mb-8">
+    <section className="bg-white dark:bg-gray-900 pt-12 px-4 sm:px-8 lg:px-16 overflow-hidden">
+      {/* Section Heading */}
+      <div className="max-w-4xl mx-auto text-center">
         <p className="text-sm uppercase tracking-widest text-blue-600 font-semibold mb-2">
           Trusted by 20+ happy customers
         </p>
@@ -24,27 +28,41 @@ const TrustedBy = () => {
       </div>
 
       {/* Marquee Container */}
-      <div className="relative mx-auto overflow-hidden w-[1024px] max-w-full">
+      <div className="relative w-full overflow-hidden">
         {/* Side Gradients */}
-        <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-white dark:from-gray-900 to-transparent z-10" />
-        <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-white dark:from-gray-900 to-transparent z-10" />
+        <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-white dark:from-gray-900 to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-white dark:from-gray-900 to-transparent z-10 pointer-events-none" />
 
-        {/* Marquee Track */}
-        <div className="overflow-hidden">
-          <div className="flex animate-marquee gap-16 whitespace-nowrap">
-            {fullBrandList.map((brand, index) => (
-              <div
-                key={index}
-                className="flex items-center justify-center h-16 w-[160px] flex-shrink-0"
-              >
-                <img
-                  src={brand.logo}
-                  alt={brand.name}
-                  className="h-6 w-auto object-contain grayscale hover:grayscale-0 transition duration-300 ease-in-out dark:grayscale dark:hover:grayscale-0"
-                />
-              </div>
-            ))}
-          </div>
+        {/* Continuous Marquee Track */}
+        <div className="flex w-max animate-marquee-slow">
+          {[...brands, ...brands].map((brand, index) => (
+            <div
+              key={index}
+              className="flex items-center justify-center h-20 sm:h-28 w-[140px] sm:w-[200px] mx-2 flex-shrink-0"
+            >
+              <img
+                src={brand.logo}
+                alt={brand.name}
+                className="h-full w-auto object-contain"
+              />
+            </div>
+          ))}
+        </div>
+
+        {/* Duplicate track for seamless loop */}
+        <div className="flex w-max animate-marquee-slow2 absolute top-0">
+          {[...brands, ...brands].map((brand, index) => (
+            <div
+              key={`dup-${index}`}
+              className="flex items-center justify-center h-20 sm:h-28 w-[140px] sm:w-[200px] mx-2 flex-shrink-0"
+            >
+              <img
+                src={brand.logo}
+                alt={brand.name}
+                className="h-full w-auto object-contain"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>
