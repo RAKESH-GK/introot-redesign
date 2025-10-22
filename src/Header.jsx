@@ -19,7 +19,7 @@ const Header = () => {
             {/* Logo */}
             <a href="/" className="flex items-center">
               <img
-                src="/asset/Introot logo white.png"
+                src="asset/Introot logo white.png"
                 alt="MyLogo"
                 className="h-6 w-auto"
               />
