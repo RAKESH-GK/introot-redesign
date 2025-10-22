@@ -1,11 +1,11 @@
 import React from "react";
 
 const images = [
-  "Public/asset/projects/graphic1.png",
-  "Public/asset/projects/graphic2.png",
-  "Public/asset/projects/lms.png",
-  "Public/asset/projects/mobile.png",
-  "Public/asset/projects/property.png",
+  "/asset/projects/graphic1.png",
+  "/asset/projects/graphic2.png",
+  "/asset/projects/lms.png",
+  "/asset/projects/mobile.png",
+  "/asset/projects/property.png",
 ];
 
 const OurWorks = () => {
