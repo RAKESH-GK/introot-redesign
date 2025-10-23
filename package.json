@@ -1,5 +1,6 @@
 {
-  "name": "react-tailwind-header",
+  "type": "module",
+  "name": "introot",
   "version": "1.0.0",
   "private": true,
   "scripts": {

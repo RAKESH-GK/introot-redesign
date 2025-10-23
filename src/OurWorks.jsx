@@ -8,7 +8,7 @@ const images = [
   "/asset/projects/property.png",
 ];
 
-const OurWorks = () => {
+function OurWorks() {
   return (
     <section id="Works" className="relative bg-gray-900 py-16 overflow-hidden">
       {/* Section Heading */}
@@ -35,8 +35,7 @@ const OurWorks = () => {
               <img
                 src={src}
                 alt={`project-${index}`}
-                className="w-full h-full object-contain"
-              />
+                className="w-full h-full object-contain" />
             </div>
           ))}
         </div>
@@ -51,14 +50,13 @@ const OurWorks = () => {
               <img
                 src={src}
                 alt={`project-duplicate-${index}`}
-                className="w-full h-full object-contain"
-              />
+                className="w-full h-full object-contain" />
             </div>
           ))}
         </div>
       </div>
     </section>
   );
-};
+}
 
 export default OurWorks;
